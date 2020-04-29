@@ -78,7 +78,6 @@ form > fieldset > p {
 }
 
 .leg-2 {
-
     top: 5px;
 }
 
@@ -141,10 +140,10 @@ textarea:focus {
 }
 
 .newsletter label {
-    font-size: 1.3em;    
+    font-size: 1.4em;    
     display: inline-block;
-    padding:0;
-    margin: 5px 0;
+    margin: 20px 0;
+    padding-left: 0;
 }
 
 .newsletter input {
@@ -240,9 +239,9 @@ footer h3 {
        float: right;
    }
 
-   .newsletter > .txtarea {
-       display: block;
-       margin: 20px 0;
+   body > .newsletter > .txtarea {
+       display: inline block;
+       padding: 20px 0;
    }
 
    #textarea {
