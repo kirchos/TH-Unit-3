@@ -1,6 +1,10 @@
 *{
     font-family: 'Cairo', sans-serif;
 }
+
+html {
+    height: 100vh;
+}
 /* borders */
 
 .bt {
@@ -48,24 +52,34 @@ form {
 .main-wrapper p {
     color: rgb(126, 118, 118);
     font-weight: 500;
-
+    
 }
 
-fieldset {
+fieldset,
+body > .main-wrapper > .fs {
+    position: relative;
+    padding-top: 50px;
     border: none;
-    padding: 0 5px 30px;
 }
 
 form > fieldset > p {
     font-size: 1.4em;
-    letter-spacing: 1.3;
     display: inline;
 }
 
-legend {
+.leg-1,
+.leg-2 {
     font-weight: bold;
     font-size: 1.5em;
     padding: 20px 0 15px;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+.leg-2 {
+
+    top: 5px;
 }
 
 .first label {
@@ -74,6 +88,10 @@ legend {
     font-weight: bold;
     color: rgb(126, 118, 118);
     padding: 10px 0;
+}
+
+#zip::placeholder {
+    padding-left: 60%;
 }
 
 ::placeholder {
@@ -89,6 +107,14 @@ input,
     background: rgb(188, 224, 238);
     border: none;
     border-radius: 5px;
+    
+}
+
+input:focus,
+#state:focus {
+    background: rgb(15, 156, 238);
+    color: #fff;
+    transition: all .8s;
 }
 
 input[type='text']:focus,
@@ -150,11 +176,17 @@ input[type='submit'] {
 }
 
 footer {
-    padding: 15px 0 35px;
+    padding: 25px 0 25px;  
 }
 
 footer h3 {
     margin: 0;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
 
@@ -171,18 +203,20 @@ footer h3 {
        margin: 10px 0;
    }
 
-   .newsletter {
-       padding: 0 0 30px;
-   }
+   
 
    .first label {
        width: 30%;
        float: left;
    }
 
+   .first {
+       background: rgb(233, 239, 241);
+   }
+
    label[for='zip']{
        position: absolute;
-       top: 613px;
+       top: 390px;
        width: 15%;
    }
 
@@ -190,10 +224,25 @@ footer h3 {
        float: left;
    }
 
+   
+    .main-wrapper > .newsletter > legend {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 20px 0 15px;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
    .first input,
    #state {
        width: 70%;
        float: right;
+   }
+
+   .newsletter > .txtarea {
+       display: block;
+       margin: 20px 0;
    }
 
    #textarea {
@@ -205,9 +254,11 @@ footer h3 {
    }
 
    footer {
-       height: 60px;
-       margin: 20px 0;
+       height: 80px;
        padding: 0;
    }
+   footer h3 {
+    padding:  30px;
+}
 
 }

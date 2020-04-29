@@ -23,13 +23,13 @@
 
         <form action="index.html" method="post" class="clearfix">
             <fieldset class="bb first clearfix">
-                <legend>Contact Information</legend>
+                <legend class="leg-1">Contact Information</legend>
 
                 <label for="name" class="">Full Name</label>
-                <input type="text" name="full-name" id="name" placeholder="Required">
+                <input type="text" name="full-name" id="name" placeholder="Required" required>
 
                 <label for="email">Email Address</label>
-                <input type="email" name="email" id="email" placeholder="Required">
+                <input type="email" name="email" id="email" placeholder="Required" required>
 
                 <label for="phone">Phone Number</label>
                 <input type="tel" name="phone" id="phone">
@@ -60,10 +60,10 @@
                 </select>
 
                 <label for="zip">Zip Code</label>
-                <input type="text" name="zip" id="zip">
+                <input type="text" name="zip" id="zip" required>
             </fieldset>
-            <fieldset class="newsletter">
-                <legend>Newsletter</legend>
+            <fieldset class="newsletter fs">
+                <legend class="leg-2">Newsletter</legend>
                 <p class="format">Select the newsletter you would like to recieve</p>
 
                 <input type="checkbox" name="html_news" id="html_c">
@@ -81,9 +81,9 @@
                 <label for="html_r"> HTML</label><br>
 
                 <input type="radio" name="text" id="text_r">
-                <label for="text_r">Plain text</label>
+                <label for="text_r">Plain text</label><br>
 
-                <p class="format">Other topics you'd like to hear about</p>
+                <label for="text_area" class="txtarea">Other topics you'd like to hear about</label>
                 <textarea name="text-area" id="text_area" cols="20" rows="8"></textarea>
                 <input type="submit" value="Sign Up">
             </fieldset>
