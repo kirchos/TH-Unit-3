@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>An Online Registration Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>the code review</h1>
+    </header>
+
+    <div class="main-wrapper">
+        <section class="sign-inf bb">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </section>
+
+        <form action="index.html" method="post" class="clearfix">
+            <fieldset class="bb first clearfix">
+                <legend>Contact Information</legend>
+
+                <label for="name" class="">Full Name</label>
+                <input type="text" name="full-name" id="name" placeholder="Required">
+
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="Required">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone">
+
+                <label for="address">Street Address</label>
+                <input type="text" name="address" id="address">
+
+                <label for="city">City</label>
+                <input type="text" name="city" id="city">
+
+                <label for="state">State</label>
+                <select id="state" name="state" class="select">
+                    <optgroup label="Europe">
+                        <option value="macedonia">Macedonia</option>
+                        <option value="serbia">Serbia</option>
+                        <option value="france">France</option>
+                        <option value="Slovenia">Slovenia</option>
+                    </optgroup>
+                    <optgroup label="Asia">
+                        <option value="China">China</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Korea">Korea</option>
+                    </optgroup>
+                    <optgroup label="North Americas & Canada">
+                        <option value="United States">USA</option>
+                        <option value="Canada">Canada</option>
+                    </optgroup>
+                </select>
+
+                <label for="zip">Zip Code</label>
+                <input type="text" name="zip" id="zip">
+            </fieldset>
+            <fieldset class="newsletter">
+                <legend>Newsletter</legend>
+                <p class="format">Select the newsletter you would like to recieve</p>
+
+                <input type="checkbox" name="html_news" id="html_c">
+                <label for="html_c">HTML News</label><br>
+
+                <input type="checkbox" name="css_news" id="css_c">
+                <label for="css_c">CSS News</label><br>
+
+                <input type="checkbox" name="js_news" id="js_c">
+                <label for="js_c">Javascript News</label>
+
+                <p class="format">Newsletter format</p>
+
+                <input type="radio" name="html" id="html_r">
+                <label for="html_r"> HTML</label><br>
+
+                <input type="radio" name="plain_text" id="text_r">
+                <label for="text_r">Plain text</label>
+
+                <p class="format">Other topics you'd like to hear about</p>
+                <textarea name="text-area" id="text_area" cols="20" rows="8"></textarea>
+                <input type="submit" value="Sign Up">
+            </fieldset>
+
+        </form>
+    </div>
+    <footer>
+        <h3><em>Copyright The Code Review</em></h3>
+    </footer>
+</body>
+
+</html>

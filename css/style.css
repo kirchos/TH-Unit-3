@@ -1,0 +1,213 @@
+*{
+    font-family: 'Cairo', sans-serif;
+}
+/* borders */
+
+.bt {
+    border-top: solid 1px rgb(22, 178, 240);
+    padding-top: 20px;
+}
+
+.bb {
+    border-bottom: solid 2px rgb(22, 178, 240);
+}
+
+header {
+    background: steelblue;
+    color: #fff;
+    height: 80px;
+    font-size: .9em;
+    display: flex;
+}
+
+header h1 {
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.sign-inf h2,
+.sign-inf p,
+footer h3 {
+    text-align: center;
+}
+.sign-inf {
+    border-bottom: 3px solid steelblue;
+}
+
+.sign-inf p {
+    margin: 0 auto 30px;
+    font-size: 1.4em;
+    padding: 0 10px;
+}
+
+form {
+    margin-top:3px;
+    border-top: 1px solid steelblue;
+}
+
+.main-wrapper p {
+    color: rgb(126, 118, 118);
+    font-weight: 500;
+
+}
+
+fieldset {
+    border: none;
+    padding: 0 5px 30px;
+}
+
+form > fieldset > p {
+    font-size: 1.4em;
+    letter-spacing: 1.3;
+    display: inline;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 20px 0 15px;
+}
+
+.first label {
+    display: block;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: rgb(126, 118, 118);
+    padding: 10px 0;
+}
+
+::placeholder {
+    padding-left: 80%;
+    color: rgb(126, 118, 118);
+}
+
+input,
+#state {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    background: rgb(188, 224, 238);
+    border: none;
+    border-radius: 5px;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='tel']:focus,
+textarea:focus {
+    border: solid 2px rgb(22, 178, 240);
+}
+
+#zip {
+    max-width: 30%;
+}
+
+
+.newsletter label,
+.newsletter input,
+.newsletter textarea {
+    padding-left: 5px;
+}
+
+.format {
+    display: block;
+    padding-left: 0;
+}
+
+.newsletter label {
+    font-size: 1.3em;    
+    display: inline-block;
+    padding:0;
+    margin: 5px 0;
+}
+
+.newsletter input {
+    width: 25px;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+    font-weight: bold;
+	padding-left: 5px;
+}
+
+#text_area {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    background: rgb(188, 224, 238);
+    border: none;
+    border-radius: 5px;
+}
+
+input[type='submit'] {
+    font-size: 1.5em;
+    width: 100%;
+    display: block;
+    padding: 25px 0;
+    margin: 35px 0  0;
+}
+
+footer {
+    padding: 15px 0 35px;
+}
+
+footer h3 {
+    margin: 0;
+}
+
+
+@media (min-width: 767px){
+    .main-wrapper {
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+   .first label,
+   .first input {
+       display: block;
+       margin: 10px 0;
+   }
+
+   .newsletter {
+       padding: 0 0 30px;
+   }
+
+   .first label {
+       width: 30%;
+       float: left;
+   }
+
+   label[for='zip']{
+       position: absolute;
+       top: 613px;
+       width: 15%;
+   }
+
+   #zip {
+       float: left;
+   }
+
+   .first input,
+   #state {
+       width: 70%;
+       float: right;
+   }
+
+   #textarea {
+       width: 100%;
+   }
+   
+   input[type='submit'] {
+       margin-top: 30px;
+   }
+
+   footer {
+       height: 60px;
+       margin: 20px 0;
+       padding: 0;
+   }
+
+}
