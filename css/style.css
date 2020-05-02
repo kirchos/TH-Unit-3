@@ -2,9 +2,6 @@
     font-family: 'Cairo', sans-serif;
 }
 
-html {
-    height: 100vh;
-}
 /* borders */
 
 .bt {
@@ -119,9 +116,9 @@ input,
 #state {
     display: inline-block;
     width: 100%;
-    padding: 10px 0;
+    padding: 8px 0;
     background: rgb(188, 224, 238);
-    border: none;
+    border: solid 2px rgb(15, 156, 238);
     border-radius: 5px;
     
 }
@@ -137,7 +134,7 @@ input[type='text']:focus,
 input[type='email']:focus,
 input[type='tel']:focus,
 textarea:focus {
-    border: solid 2px rgb(22, 178, 240);
+    border: solid 2px rgb(188, 224, 238);
 }
 
 #zip {
@@ -186,10 +183,14 @@ input[type="radio"]:checked + label {
 
 input[type='submit'] {
     font-size: 1.5em;
+    font-weight: bold;
     width: 100%;
     display: block;
     padding: 25px 0;
     margin: 35px 0  0;
+    background-color: rgb(15, 156, 238);
+    border: solid 2px #fff;
+    color: #fff;
 }
 
 footer {
@@ -219,7 +220,7 @@ footer h3 {
    .first label,
    .first input {
        display: block;
-       margin: 10px 0;
+       margin: 15px 0;
    }
 
    .first label {
@@ -238,7 +239,7 @@ footer h3 {
 
    label[for='zip']{
        position: absolute;
-       top: 390px;
+       top: 440px;
        width: 15%;
    }
 
